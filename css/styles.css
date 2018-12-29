@@ -17,6 +17,43 @@ to be deleted later..
     border: 1px solid red;
 }
 
+li {
+    border: 1px solid green;
+}
+
+/* ##################################### 
+MAIN NAV
+##################################### */
+
+.page-navigation {
+    display: flex; 
+    justify-content: space-between;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+}
+
+/* ^^^ check this later ^^^ */
+
+
+.page-navigation__items {
+    list-style-type: none;
+    display: flex;
+    margin-right: 5vw;
+    flex-direction: row;
+    justify-content: flex-end;    
+}
+
+.page-navigation__item {
+    margin-left: 40px;
+    
+}
+
+.page-navigation__item__link {
+    text-decoration: none;
+}
+
 /* ##################################### 
 CSS GRID
 ##################################### */
@@ -27,10 +64,10 @@ CSS GRID
     max-width: 1640px;
 }
 
-.sec--hotel--1 {
+.sec--main-desc {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 12% 1fr 1fr 12%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-gap: 16px;
     /* grid-column-gap: 0.8vw; */
 }

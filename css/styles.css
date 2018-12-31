@@ -27,7 +27,7 @@ MAIN NAV
 
 .page-navigation {
     display: flex; 
-    justify-content: space-between;
+    /* justify-content: space-between; */
     justify-content: flex-end;
     padding-bottom: 0;
     height: 70px;
@@ -39,7 +39,7 @@ MAIN NAV
 
 .page-navigation__items {
     list-style-type: none;
-    display: flex;
+    display: flexś;
     margin-right: 5vw;
     flex-direction: row;
     justify-content: flex-end;    

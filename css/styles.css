@@ -21,6 +21,14 @@ li {
     border: 1px solid green;
 }
 
+.sec--hotel--1__item--title {
+    background-color: rgb(203, 209, 223);
+}
+
+.sec--hotel--1__item--desc {
+    background-color: rgb(231, 199, 199);
+}
+
 /* ##################################### 
 TYPOGRAPHY
 ##################################### */

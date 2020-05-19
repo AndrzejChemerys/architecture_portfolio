@@ -1,0 +1,22 @@
+{
+  "name": "architecture_portfolio",
+  "version": "1.0.0",
+  "description": "Architecture Portfolio Andrii Chemerys",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriiChemerys/architecture_portfolio.git"
+  },
+  "author": "Andrii Chemerys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriiChemerys/architecture_portfolio/issues"
+  },
+  "homepage": "https://github.com/AndriiChemerys/architecture_portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

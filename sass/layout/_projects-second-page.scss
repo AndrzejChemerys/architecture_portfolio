@@ -1,0 +1,13 @@
+.projects-second-page {
+
+    height: 100vh;
+    padding: 2vh 7vw 2vh 7vw;
+    /* max-width: 1640px; */
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    /* grid-column-gap: 16px; */
+    grid-column-gap: 0.8vw;
+
+}

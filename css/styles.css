@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,11 +13,29 @@ html {
   scroll-behavior: smooth; }
 
 .navbar__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   font-size: 16px;
   color: #222d31;
   text-decoration: none; }
+
+.header__logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #222d31; }
+
+.main__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222d31; }
+
+.main__desc {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222d31; }
 
 .main {
   height: 94vh;

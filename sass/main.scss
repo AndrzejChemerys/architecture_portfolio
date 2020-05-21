@@ -1,6 +1,6 @@
 // @import "/abstracts/variables";
 
-// @import "/base/base";
+@import "/base/base";
 // @import "/base/typography";
 
 // @import "/pages/home";
@@ -17,7 +17,3 @@
 // body {
 //     background-color: rgb(73, 69, 69);
 // }
-
-html {
-    scroll-behavior: smooth;
-}

@@ -157,3 +157,6 @@
   .museum-p2__img-6 {
     grid-column: 3/6;
     grid-row: 9/16; }
+
+html {
+  scroll-behavior: smooth; }

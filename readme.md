@@ -20,6 +20,7 @@
 **4.** 7-1 CSS architecture with SASS :heavy_check_mark:
 **5.** node-sass :heavy_check_mark:
 **6.** Optimizating images for Web :heavy_check_mark:
+**6.** Google fonts :heavy_check_mark:
 
 > Architecture portfolio design
 

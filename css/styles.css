@@ -7,10 +7,16 @@
   background-color: #ffffff; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
 
 .content {
-  margin-top: 6vh; }
+  flex: 1 0 auto; }
 
 .navbar__link {
   font-family: "Cormorant Garamond", serif;
@@ -38,7 +44,6 @@ html {
   color: #222d31; }
 
 .main {
-  margin: 6vh 0 0 0;
   height: 94vh;
   padding: 2vh 7vw 2vh 7vw;
   /* max-width: 1640px; */
@@ -64,7 +69,6 @@ html {
     align-self: end; }
 
 .projects-second-page {
-  margin: 6vh 0 0 0;
   height: 94vh;
   padding: 2vh 7vw 2vh 7vw;
   /* max-width: 1640px; */
@@ -246,3 +250,13 @@ html {
     transition: all 0.3s ease 0s; }
     .navbar__link:hover {
       color: #bbace6; }
+
+.footer {
+  background-color: #888282;
+  flex-shrink: 0;
+  padding: 20px; }
+  .footer__text-author-credit {
+    text-align: center;
+    padding: 20px; }
+  .footer__text-social-media, .footer__text-year-issue {
+    text-align: center; }

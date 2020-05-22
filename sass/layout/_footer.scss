@@ -1,0 +1,18 @@
+.footer {
+    // display: block;
+    background-color: rgb(136, 130, 130);
+    // height: 50px;
+    // margin-top: -50px;
+    flex-shrink: 0;
+    padding: 20px;
+
+    &__text-author-credit {
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__text-social-media,
+    &__text-year-issue {
+        text-align: center;
+    }
+}

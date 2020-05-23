@@ -42,3 +42,24 @@
         color: $color-primary;
     }
 }
+
+.footer {
+    &__text-author-credit {
+        font-family: "Cormorant Garamond", serif;
+        // font-family: "Cardo", serif;
+
+        font-weight: 700;
+        font-size: 22px;
+        color: $color-primary;
+    }
+
+    &__text-social-media,
+    &__text-year-issue {
+        font-family: "Cormorant Garamond", serif;
+        // font-family: "Cardo", serif;
+
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-primary;
+    }
+}

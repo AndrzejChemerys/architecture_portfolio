@@ -1,18 +1,52 @@
 .footer {
     // display: block;
-    background-color: rgb(136, 130, 130);
+    background-color: $color-background-secondary;
     // height: 50px;
     // margin-top: -50px;
     flex-shrink: 0;
-    padding: 20px;
+    padding: 10px;
 
     &__text-author-credit {
         text-align: center;
-        padding: 20px;
+        padding: 15px 0 5px 0;
+        background-color: $color-background-secondary;
+
     }
 
     &__text-social-media,
     &__text-year-issue {
+        padding: 5px;
         text-align: center;
+        background-color: $color-background-secondary;
+    }
+
+    &__social-links {
+        padding: 10px 38vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: $color-background-secondary;
+    }
+
+    &__item {
+        list-style: none;
+        background-color: $color-background-secondary;
+    }
+
+    &__link {
+        background-color: $color-background-secondary;
+    }
+
+    // Social media icons styles: 
+    .fa,
+    .footer__gh-link {
+        padding: 10px;
+        font-size: 24px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        color: $color-primary;
+        background-color: transparent;
     }
 }

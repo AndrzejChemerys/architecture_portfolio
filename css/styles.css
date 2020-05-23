@@ -43,6 +43,18 @@ body {
   font-size: 16px;
   color: #222d31; }
 
+.footer__text-author-credit {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #222d31; }
+
+.footer__text-social-media, .footer__text-year-issue {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222d31; }
+
 .main {
   height: 94vh;
   padding: 2vh 7vw 2vh 7vw;
@@ -252,11 +264,35 @@ body {
       color: #bbace6; }
 
 .footer {
-  background-color: #888282;
+  background-color: #d8cff0;
   flex-shrink: 0;
-  padding: 20px; }
+  padding: 10px; }
   .footer__text-author-credit {
     text-align: center;
-    padding: 20px; }
+    padding: 15px 0 5px 0;
+    background-color: #d8cff0; }
   .footer__text-social-media, .footer__text-year-issue {
-    text-align: center; }
+    padding: 5px;
+    text-align: center;
+    background-color: #d8cff0; }
+  .footer__social-links {
+    padding: 10px 38vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d8cff0; }
+  .footer__item {
+    list-style: none;
+    background-color: #d8cff0; }
+  .footer__link {
+    background-color: #d8cff0; }
+  .footer .fa,
+  .footer .footer__gh-link {
+    padding: 10px;
+    font-size: 24px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: #222d31;
+    background-color: transparent; }

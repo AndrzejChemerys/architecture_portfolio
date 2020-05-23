@@ -4,23 +4,31 @@
 
 ---
 
-## >>>>>>>>> WORK IN PROGRESS.. <<<<<<<<<
-
-## >>>>> FINAL VERSION COMMING SOON <<<<<
+https://andriichemerys.github.io/architecture_portfolio/
 
 ---
 
 ## What I Learned:
 
 **1.** Web design basics :heavy_check_mark:
+
 **1.** Using SCSS :heavy_check_mark:
+
 **2.** BEM :heavy_check_mark:
+
 **3.** CSS-grid :heavy_check_mark:
-**3.** Flexbox
-**4.** 7-1 CSS architecture with SASS :heavy_check_mark:
-**5.** node-sass :heavy_check_mark:
-**6.** Optimizating images for Web :heavy_check_mark:
-**6.** Google fonts :heavy_check_mark:
+
+**4.** Flexbox
+
+**5.** 7-1 CSS architecture with SASS :heavy_check_mark:
+
+**6.** node-sass :heavy_check_mark:
+
+**7.** Optimizating images for Web :heavy_check_mark:
+
+**8.** Google fonts :heavy_check_mark:
+
+**9.** Social media buttons with font awesome :heavy_check_mark:
 
 > Architecture portfolio design
 

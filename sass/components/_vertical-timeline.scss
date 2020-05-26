@@ -1,0 +1,57 @@
+.timeline {
+
+    &__body {
+        position: relative;
+        margin-left: 100px;
+        border-radius: 0 8px 8px 0;
+        padding: 5px 0;
+
+        &:after {
+            content: '';
+            width: 2px;
+            height: 100%;
+
+            background-color: $color-timeline-line;
+            position: absolute;
+            left: -5px;
+            top: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid $color-timeline-line;
+            background-color: $color-timeline-bg;
+            position: absolute;
+            left: -16px;
+            top: 0px;
+            z-index: 1;
+        }
+    }
+
+    &__time {
+        position: absolute;
+        left: -135px;
+        top: 0px;
+        opacity: .75;
+        text-align: right;
+        width: 10%;
+
+    }
+
+    &__content {
+        margin: 17px;
+        padding-bottom: 17px;
+        border-bottom: 1px dashed $color-timeline-line;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+}

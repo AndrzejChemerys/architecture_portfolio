@@ -10,10 +10,14 @@
     align-items: center;
     padding: 10px 7vw;
 
+    z-index: 2;
+
     &__logo {
         cursor: pointer;
         margin-right: auto;
     }
+
+
 }
 
 

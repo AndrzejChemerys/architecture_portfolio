@@ -63,3 +63,33 @@
         color: $color-primary;
     }
 }
+
+.timeline {
+    font-family: "Cormorant Garamond", serif;
+    color: $color-primary;
+
+    &__name {
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    &__profession {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    &__section {}
+
+    &__time {
+        font-size: 16px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+
+    &__paragraph {}
+
+}

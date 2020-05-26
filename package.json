@@ -4,7 +4,7 @@
   "description": "Architecture Portfolio Andrii Chemerys",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile": "node-sass sass/main.scss css/styles.css -w"
   },
   "repository": {
     "type": "git",

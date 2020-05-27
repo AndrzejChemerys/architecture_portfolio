@@ -58,12 +58,19 @@ body {
 .timeline {
   font-family: "Cormorant Garamond", serif;
   color: #222d31; }
+  .timeline__page-name {
+    font-weight: 500;
+    font-size: 24px;
+    color: #d8cff0; }
   .timeline__name {
     font-weight: 700;
-    font-size: 34px; }
+    font-size: 30px; }
   .timeline__profession {
     font-weight: 500;
-    font-size: 30px; }
+    font-size: 24px; }
+  .timeline__section {
+    font-weight: 700;
+    font-size: 20px; }
   .timeline__time {
     font-size: 16px; }
   .timeline__title {
@@ -136,7 +143,7 @@ body {
   border-radius: 0 8px 8px 0;
   padding: 5px 0; }
   .timeline__body:after {
-    content: '';
+    content: "";
     width: 2px;
     height: 100%;
     background-color: #d8cff0;
@@ -144,35 +151,43 @@ body {
     left: -5px;
     top: 0; }
 
+.timeline__text-to-align {
+  position: relative;
+  left: 10px; }
+
+.timeline__profession {
+  margin-bottom: 10px;
+  padding-bottom: 10px; }
+
 .timeline__item {
   position: relative; }
   .timeline__item:after {
-    content: '';
-    width: 20px;
-    height: 20px;
+    content: "";
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     border: 2px solid #d8cff0;
     background-color: #ffffff;
     position: absolute;
-    left: -16px;
-    top: 0px;
+    left: -13px;
+    top: 3px;
     z-index: 1; }
 
 .timeline__time {
   position: absolute;
   left: -135px;
   top: 0px;
-  opacity: .75;
+  opacity: 0.75;
   text-align: right;
   width: 10%; }
 
 .timeline__content {
-  margin: 17px;
-  padding-bottom: 17px;
+  margin: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px dashed #d8cff0; }
 
 .timeline__title {
-  margin-bottom: 15px; }
+  margin-bottom: 5px; }
 
 .hotel-p2__img {
   width: 100%;

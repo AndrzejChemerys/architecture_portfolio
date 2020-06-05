@@ -25,20 +25,20 @@
     &__title {
         grid-column: 10/13;
         grid-row: 2/3;
+        text-align: left;
     }
 
     &__desc {
         grid-column: 10/13;
-        grid-row: 6/8;
+        grid-row: 5/8;
         align-self: end;
     }
 }
 
-@media only screen and (max-width: $breakpoint-xs) {
+@media only screen and (max-width: $breakpoint-lg) {
     .main {
         height: 94vh;
         padding: 2vh 7vw 2vh 7vw;
-        /* max-width: 1640px; */
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -46,12 +46,65 @@
         grid-column-gap: 0.8vw;
 
         &__img {
+            /* max-width: 1088px; */
             width: 100%;
-            height: 100%;
+            height: auto;
+            grid-column: 1/9;
+            grid-row: 2/8;
+            align-self: start;
+            object-fit: contain;
+        }
+
+        &__title {
+            grid-column: 9/13;
+            grid-row: 2/3;
+            text-align: center;
+        }
+
+        &__desc {
+            grid-column: 9/13;
+            grid-row: 3/8;
+            align-self: start;
+            text-align: center;
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-sm) {
+    .main {
+        &__img {
             grid-column: 1/13;
             grid-row: 1/5;
+            object-fit: contain;
+            height: 100%;
+            align-self: end;
+        }
+
+        &__title {
+            grid-column: 1/13;
+            grid-row: 5/6;
+            text-align: center;
             align-self: center;
-            object-fit: object-fit;
+        }
+
+        &__desc {
+            grid-column: 3/11;
+            grid-row: 6/8;
+            align-self: start;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-xs) {
+    .main {
+        &__img {
+            width: 100%;
+            height: auto;
+            grid-column: 1/13;
+            grid-row: 1/5;
+            object-fit: fill;
         }
 
         &__title {

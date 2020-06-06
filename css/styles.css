@@ -202,6 +202,18 @@ body {
   /* grid-column-gap: 16px; */
   grid-column-gap: 0.8vw; }
 
+@media only screen and (max-width: 960px) {
+  .projects-second-page {
+    grid-row-gap: 0.8vh; } }
+
+@media only screen and (max-width: 600px) {
+  .projects-second-page {
+    height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    grid-column-gap: 0.8vw; } }
+
 .timeline__body {
   position: relative;
   margin-left: 100px;
@@ -277,6 +289,64 @@ body {
   .hotel-p2__img-6 {
     grid-column: 9/13;
     grid-row: 10/16; }
+
+@media only screen and (max-width: 1264px) {
+  .hotel-p2__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; } }
+
+@media only screen and (max-width: 960px) {
+  .hotel-p2__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .hotel-p2__img-1 {
+      grid-column: 1/6;
+      grid-row: 6/12; }
+    .hotel-p2__img-2 {
+      grid-column: 7/13;
+      grid-row: 1/6; }
+    .hotel-p2__img-3 {
+      grid-column: 1/6;
+      grid-row: 1/6; }
+    .hotel-p2__img-4 {
+      grid-column: 7/13;
+      grid-row: 6/12; }
+    .hotel-p2__img-5 {
+      object-fit: cover;
+      grid-column: 1/6;
+      grid-row: 12/17; }
+    .hotel-p2__img-6 {
+      object-fit: cover;
+      grid-column: 7/13;
+      grid-row: 12/17; } }
+
+@media only screen and (max-width: 600px) {
+  .hotel-p2__img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    object-fit: contain; }
+    .hotel-p2__img-1 {
+      grid-column: 1/13;
+      grid-row: 1/4; }
+    .hotel-p2__img-2 {
+      grid-column: 1/13;
+      grid-row: 4/7; }
+    .hotel-p2__img-3 {
+      grid-column: 1/13;
+      grid-row: 7/10; }
+    .hotel-p2__img-4 {
+      grid-column: 1/13;
+      grid-row: 10/13; }
+    .hotel-p2__img-5 {
+      grid-column: 1/13;
+      grid-row: 13/16; }
+    .hotel-p2__img-6 {
+      grid-column: 1/13;
+      grid-row: 16/19; } }
 
 .sports-hall-p2__img {
   width: 100%;

@@ -12,3 +12,21 @@
     grid-column-gap: 0.8vw;
 
 }
+
+@media only screen and (max-width: $breakpoint-sm) {
+    .projects-second-page {
+        grid-row-gap: 0.8vh;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-xs) {
+    .projects-second-page {
+        height: 250vh;
+
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(18, 1fr);
+        grid-column-gap: 0.8vw;
+
+    }
+}

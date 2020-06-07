@@ -1,32 +1,40 @@
 .projects-second-page {
-    // position: relative;
-    // margin: 6vh 0 0 0;
-    height: 94vh;
-    padding: 2vh 7vw 2vh 7vw;
-    /* max-width: 1640px; */
-
+    // height: 94vh;
+    // padding: 2vh 7vw 2vh 7vw;
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    // grid-template-rows: repeat(16, 1fr);
+    // grid-column-gap: 0.8vw;
+    padding: 2vh 7vw;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    /* grid-column-gap: 16px; */
-    grid-column-gap: 0.8vw;
-
+    grid-template: repeat(6, 1fr) / 1fr;
+    grid-gap: 0.8vw;
+    justify-items: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: $breakpoint-sm) {
+.hotel-p2__img,
+.apartment-p2__img,
+.theater-p2__img {
+    width: 100%
+}
+
+@media only screen and (min-width: $breakpoint-xs) {
     .projects-second-page {
-        grid-row-gap: 0.8vh;
+
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        // height: 250vh;
+
+        // display: grid;
+        // grid-template-columns: repeat(12, 1fr);
+        // grid-template-rows: repeat(18, 1fr);
+        // grid-column-gap: 0.8vw;
+
     }
 }
 
-@media only screen and (max-width: $breakpoint-xs) {
+@media only screen and (min-width: $breakpoint-sm) {
     .projects-second-page {
-        height: 250vh;
-
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(18, 1fr);
-        grid-column-gap: 0.8vw;
-
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
     }
 }

@@ -1,43 +1,49 @@
+// #########################################################
+// CSS Grid layout for kindergarden section:
+// Mobile - 4 rows / 1 column;
+// Tablets and up - a new 5/3 grid layout, where 3 images is 
+// in one row (2/5 of a grid row layout), 
+// and large image is takening a 3/5 of a grid row layout;
+//  __   __   __
+// |  | |  | |  |
+// |__| |__| |__|
+//  ____________
+// |            |
+// |            |
+// |____________|
+//
+// #########################################################
+
 .kindergarten-p2 {
     padding: 2vh 7vw;
     display: grid;
-    grid-template: repeat(6, 1fr) / 1fr;
+    grid-template: repeat(4, 1fr) / 1fr;
     grid-gap: 0.8vw;
     justify-items: center;
     align-items: center;
-
-    &__img {
-        &-1 {
-            // grid-column: 1/span 3;
-            grid-row: 1/ span 2;
-        }
-
-        &-2 {
-            // grid-column: 1/span 3;
-            grid-row: 1/ span 2;
-        }
-
-        &-3 {
-            // grid-column: 1/span 3;
-            grid-row: 1 / span 2;
-        }
-
-        &-4 {
-            grid-column: 1 /span 3;
-            grid-row: 3 / span 3;
-        }
-    }
-
 }
 
 @media only screen and (min-width: $breakpoint-xs) {
     .kindergarten-p2 {
-        grid-template: repeat(3, 1fr)/repeat(5, 1fr);
-    }
-}
-
-@media only screen and (min-width: $breakpoint-sm) {
-    .kindergarten-p2 {
         grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+
+        &__img {
+            &-1 {
+                grid-row: 1/ span 2;
+            }
+
+            &-2 {
+                grid-row: 1/ span 2;
+            }
+
+            &-3 {
+                grid-row: 1 / span 2;
+            }
+
+            &-4 {
+                grid-column: 1 /span 3;
+                grid-row: 3 / span 3;
+            }
+        }
     }
 }

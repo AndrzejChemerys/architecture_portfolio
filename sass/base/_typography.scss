@@ -70,32 +70,78 @@
 
     &__page-name {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 14px;
         color: $color-timeline-line;
     }
 
     &__name {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 18px;
     }
 
     &__profession {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 14px;
     }
 
     &__section {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     &__time {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     &__title {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 14px;
 
+    }
+
+    &__paragraph {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+    .timeline {
+        font-family: "Cormorant Garamond", serif;
+        color: $color-primary;
+
+        &__page-name {
+            font-weight: 500;
+            font-size: 1.5vw;
+            color: $color-timeline-line;
+        }
+
+        &__name {
+            font-weight: 700;
+            font-size: 2.5vw;
+        }
+
+        &__profession {
+            font-weight: 500;
+            font-size: 1.5vw;
+        }
+
+        &__section {
+            font-weight: 700;
+            font-size: 1.5vw;
+        }
+
+        &__time {
+            font-size: 1.2vw;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 1.5vw;
+
+        }
+
+        &__paragraph {
+            font-size: 1.3vw;
+        }
     }
 }

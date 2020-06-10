@@ -22,7 +22,7 @@ body {
 .content {
   flex: 1 0 auto; }
 
-.navbar__link {
+.navbar {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
   font-size: 16px;
@@ -504,65 +504,68 @@ body {
         grid-column: 3/6;
         grid-row: 2/3; } }
 
-.header {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 6vh;
   border: solid 1px #ededf3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px 7vw;
-  z-index: 2; }
-  .header__logo {
+  padding: 10px 6.5vw;
+  z-index: 100; }
+  .navbar__logo {
     cursor: pointer;
     margin-right: auto; }
-
-.navbar {
-  list-style: none; }
-  .navbar__item {
-    display: inline-block;
-    padding-left: 40px; }
-  .navbar__link {
+  .navbar__links ul {
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .navbar__links li {
+    list-style: none; }
+  .navbar__links li a {
+    display: block;
+    text-decoration: none;
+    color: #222d31;
+    padding: 12px;
     transition: all 0.3s ease 0s; }
-    .navbar__link:hover {
-      color: #bbace6; }
+  .navbar__links li a:hover {
+    color: #bbace6; }
 
 .toggle-button {
   position: absolute;
-  padding-right: 7vw;
+  top: .75rem;
+  right: 1rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
-  z-index: 10; }
+  height: 21px; }
 
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #222d31;
+  background-color: #bbace6;
   border-radius: 10px; }
 
-@media only screen and (max-width: 960px) {
-  .header {
+@media (max-width: 800px) {
+  .navbar {
     flex-direction: column;
-    align-items: flex-start;
-    align-content: space-between; }
+    align-items: flex-start; }
+    .navbar__links {
+      display: none;
+      width: 100%; }
+    .navbar__links ul {
+      width: 100%;
+      flex-direction: column; }
+    .navbar__links ul li {
+      text-align: center; }
+    .navbar__links ul li a {
+      padding: .5rem 1rem; }
+    .navbar__links.active {
+      display: flex; }
   .toggle-button {
-    display: flex; }
-  .header__nav {
-    display: none;
-    width: 100%; }
-  .header__nav ul {
-    width: 100%;
-    flex-direction: column; }
-  .header__nav ul li {
-    text-align: center; }
-  .header__nav ul li a {
-    padding: .5rem 1rem; }
-  .header__nav.active {
     display: flex; } }
 
 .footer {

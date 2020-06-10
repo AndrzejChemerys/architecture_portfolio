@@ -145,3 +145,45 @@
         }
     }
 }
+
+@media only screen and (min-width: $breakpoint-lg) {
+    .timeline {
+        font-family: "Cormorant Garamond", serif;
+        color: $color-primary;
+
+        &__page-name {
+            font-weight: 500;
+            font-size: 1.2vw;
+            color: $color-timeline-line;
+        }
+
+        &__name {
+            font-weight: 700;
+            font-size: 2vw;
+        }
+
+        &__profession {
+            font-weight: 500;
+            font-size: 1.2vw;
+        }
+
+        &__section {
+            font-weight: 700;
+            font-size: 1.2vw;
+        }
+
+        &__time {
+            font-size: 1.2vw;
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 1.2vw;
+
+        }
+
+        &__paragraph {
+            font-size: 1vw;
+        }
+    }
+}

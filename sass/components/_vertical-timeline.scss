@@ -1,7 +1,7 @@
 .timeline {
     &__body {
         position: relative;
-        margin-left: 100px;
+        margin-left: 50px;
         border-radius: 0 8px 8px 0;
         padding: 5px 0;
         // max-width: 900px;
@@ -48,7 +48,7 @@
 
     &__time {
         position: absolute;
-        left: -135px;
+        left: -60px;
         top: 0px;
         opacity: 0.75;
         text-align: right;
@@ -118,7 +118,7 @@
 
         &__time {
             position: absolute;
-            left: -135px;
+            left: -95px;
             top: 0px;
             opacity: 0.75;
             text-align: right;
@@ -188,7 +188,7 @@
 
         &__time {
             position: absolute;
-            left: -135px;
+            left: -115px;
             top: 0px;
             opacity: 0.75;
             text-align: right;

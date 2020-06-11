@@ -1,101 +1,106 @@
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    // position: relative;
-    justify-content: space-between;
-    align-items: center;
-    height: 6vh;
-    border: solid 1px $color-border;
-    padding: 10px 6.5vw;
-    z-index: 100;
-
-    &__logo {
-        cursor: pointer;
-        margin-right: auto;
-    }
-
-    &__links {
-        // height: 100%;
-    }
-
-    &__links ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__links li {
-        list-style: none;
-
-    }
-
-    &__links li a {
-        display: block;
-        text-decoration: none;
-        color: $color-primary;
-        padding: 12px;
-        transition: all 0.3s ease 0s;
-    }
-
-    &__links li a:hover {
-        color: $color-secondary;
-    }
+.navbar__logo {
+  height: 3vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  margin-left: 10px;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  // position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  border: solid 1px $color-border;
+  padding: 10px 6.5vw;
+  z-index: 100;
 
+  &__logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+
+  &__links {
+    // height: 100%;
+  }
+
+  &__links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__links li {
+    list-style: none;
+  }
+
+  &__links li a {
+    display: block;
+    text-decoration: none;
+    color: $color-primary;
+    padding: 12px;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__links li a:hover {
+    color: $color-secondary;
+  }
+}
 
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: $color-secondary;
-    // color: $color-border;
-    border-radius: 10px;
-    // z-index: 120;
+  height: 3px;
+  width: 100%;
+  background-color: $color-secondary;
+  // color: $color-border;
+  border-radius: 10px;
+  // z-index: 120;
 }
 
 @media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
 
-        &__links {
-            display: none;
-            width: 100%;
-        }
-
-        &__links ul {
-            width: 100%;
-            flex-direction: column;
-        }
-
-        &__links ul li {
-            text-align: center;
-        }
-
-        &__links ul li a {
-            padding: .5rem 1rem;
-        }
-
-        &__links.active {
-            display: flex;
-            // width: 100vw;
-        }
+    &__links {
+      display: none;
+      width: 100%;
     }
 
-    .toggle-button {
-        display: flex;
+    &__links ul {
+      width: 100%;
+      flex-direction: column;
     }
+
+    &__links ul li {
+      text-align: center;
+    }
+
+    &__links ul li a {
+      padding: 0.5rem 1rem;
+    }
+
+    &__links.active {
+      display: flex;
+      // width: 100vw;
+    }
+  }
+
+  .toggle-button {
+    display: flex;
+  }
 }

@@ -504,6 +504,13 @@ body {
         grid-column: 3/6;
         grid-row: 2/3; } }
 
+.navbar__logo {
+  height: 3vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  margin-left: 10px; }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -535,7 +542,7 @@ body {
 
 .toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 0.75rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -562,7 +569,7 @@ body {
     .navbar__links ul li {
       text-align: center; }
     .navbar__links ul li a {
-      padding: .5rem 1rem; }
+      padding: 0.5rem 1rem; }
     .navbar__links.active {
       display: flex; }
   .toggle-button {
